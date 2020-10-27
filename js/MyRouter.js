@@ -6,7 +6,9 @@ import store from './store/store'
 import Menu from './pages/Menu'
 import ImgesDemo from './pages/ImgesDemo'
 import AddAndReduceDemo from './pages/AddAndReduceDemo'
-import AxiosWithReduxDemo from './pages/AxiosWithReduxDemo'
+import AxiosWithReduxDemo from './pages/AxiosWithReduxDemo';
+import TableDemo from './pages/TableDemo';
+import localDemo from './pages/localDemo'
 export default class MyRouter extends Component {
     render() {
         return (
@@ -18,6 +20,8 @@ export default class MyRouter extends Component {
                             <Route name='index' path='/datademo' component={AddAndReduceDemo}></Route>
                             <Route name='index' path='/imgesdemo' component={ImgesDemo}></Route>
                             <Route name='index' path='/axiosdemo' component={AxiosWithReduxDemo}></Route>
+                            <Route name='index' path='/TableDemo' component={TableDemo}></Route>
+                            <Route name='index' path='/localDemo' component={localDemo}></Route>
                         </div>
                     </BrowserRouter>
                 </Provider>
