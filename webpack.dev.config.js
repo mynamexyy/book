@@ -9,12 +9,11 @@ module.exports = {
         host: 'localhost',
         inline:true,
         https: false,
-        port: 9000, // 启动端口默认8080
+        port: 8082, // 启动端口默认8080
         hot: true, // 是否启动热模块替换,(启用下也会启用自动刷新)
         contentBase: './dist',
         proxy:[{
-            context: ['/auth', '/api'],
-            target: 'http://127.0.0.1:8888',
+            context: ['/auth', '/api']
         }], // 设置请求代理
         //tip：如果代码中的请求路径是'/api'，反向代理最终的请求路径会是http://127.0.0.1:8888/api
         open: true, // 启动后是否自动打开默认浏览器
